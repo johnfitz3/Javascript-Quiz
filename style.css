@@ -38,4 +38,6 @@ button:hover{
 	background-color: #38a;
  
 }
-
+.intro button{
+  display: none;
+}
