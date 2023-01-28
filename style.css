@@ -7,14 +7,17 @@ body{
   font-weight: 300;
   text-align: center;
   background-color: darkslategray;
+  border-style: solid;
+  border-color: white;
 }
-h1{
+.intro{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
   padding-bottom: 100px;
   font-size: 50px;
-  color: rgb(190, 188, 195);
+  color: white;
+
 }
 p {
     font-family:'Work Sans', sans-serif;
@@ -32,12 +35,13 @@ button{
 	padding: 20px;
 	cursor: pointer;
 	margin-bottom: 20px;
- 
+ border-color: white;
 }
 button:hover{
 	background-color: #38a;
  
 }
-.intro button{
+
+.hide {
   display: none;
 }
