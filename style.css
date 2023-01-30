@@ -10,7 +10,7 @@ body{
   border-style: solid;
   border-color: white;
 }
-.intro{
+h1{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
@@ -19,12 +19,14 @@ body{
   color: white;
 
 }
+
+
 p {
     font-family:'Work Sans', sans-serif;
     color: white;
     font-size: larger;
-
-    padding-top: 200px;
+   
+   
 }
 button{
   font-family: 'Work Sans', sans-serif;
@@ -36,6 +38,7 @@ button{
 	cursor: pointer;
 	margin-bottom: 20px;
  border-color: white;
+ align-items: flex-end;
 }
 button:hover{
 	background-color: #38a;
@@ -45,3 +48,11 @@ button:hover{
 .hide {
   display: none;
 }
+.display {
+  display: block;
+}
+.next {
+ margin-top: 200px;
+
+}
+
