@@ -10,7 +10,7 @@ body{
   border-style: solid;
   border-color: white;
 }
-h1{
+.intro{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
@@ -24,11 +24,11 @@ h1{
 p {
     font-family:'Work Sans', sans-serif;
     color: white;
-    font-size: larger;
+    font-size: 30px;
    
    
 }
-button{
+.start{
   font-family: 'Work Sans', sans-serif;
 	font-size: 22px;
 	background-color:rgb(12, 65, 67);
@@ -42,17 +42,22 @@ button{
 }
 button:hover{
 	background-color: #38a;
- 
 }
 
-.hide {
-  display: none;
-}
-.display {
-  display: block;
-}
-.next {
- margin-top: 200px;
+
+.q1 {
+
+font-size: 40px;
+color: aliceblue;
+margin-bottom: 100px;
 
 }
-
+div {
+  color: white;
+}
+.answerchoices {
+  color: white;
+  font-size: smaller;
+ padding: 50px 50px;
+ margin: 100px;
+}

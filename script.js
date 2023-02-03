@@ -1,53 +1,61 @@
-
-var startScreenEl = document.getElementById('start-screen');
-var questionScreenOne = document.getElementById('content');
-
-
-
-questionScreenOne.setAttribute('class','hide');
+$(".question1").hide();
+$(".question2").hide();
+$(".question3").hide();
+$(".question4").hide();
+$(".question5").hide();
 
 
-var questions = 
-      [
-        {
-          question: "Test Question 1?",
-          choices: ["answer1", "answer2", "answer3", "answer4"],
-          answer: 2
-        },
-        
-        {
-          question: "Test Question 2?",
-          choices: ["answer1", "answer2", "answer3", "answer4"],
-          answer: 1
-        }
-        
-        
-      ];
+$(document).ready(function(){
+    $("button").click(function(){
+      $(".intro").hide();
+    });
+    $("button").click(function(){
+        $(".question1").show();
 
-function questionOne() {
+});
+});
 
-    var x = document.createElement('h2');
-    var t = document.createTextNode("Question 1");
-    x.setAttribute("style", "color: white;");
-    x.appendChild(t);
-    document.body.appendChild(x);
-    startScreenEl.setAttribute('class', 'hide');
-    questionScreenOne.setAttribute('class','display');
-    
+$(document).ready(function(){
+    $(".ans1").click(function(){
+      $(".question1").hide();
+    });
+    $(".ans1").click(function(){
+        $(".question2").show();
 
-}
+});
+});
 
 
+$(document).ready(function(){
+    $("#ans2").click(function(){
+      $(".question2").hide();
+    });
+    $("#ans2").click(function(){
+        $(".question3").show();
 
-function questionTwo() {
+});
+});
 
-    var x = document.createElement('h2');
-    var t = document.createTextNode("Question 2");
-    
-    x.setAttribute("style", "color: white;");
-    x.appendChild(t);
-    document.body.appendChild(x);
-   startScreenEl.setAttribute('class', 'hide');
-   
-}
+$(document).ready(function(){
+    $("#ans3").click(function(){
+      $(".question3").hide();
+    });
+
+
+
+    $("#ans3").click(function(){
+        $(".question4").show();
+
+});
+});
+
+$(document).ready(function(){
+    $("#ans4").click(function(){
+      $(".question4").hide();
+    });
+    $("#ans4").click(function(){
+        $(".question5").show();
+
+});
+});
 
