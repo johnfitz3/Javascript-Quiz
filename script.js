@@ -34,10 +34,22 @@ $(document).ready(function(){
 });
 
 
+function correct() {
+  const right = document.createElement("p");
+  const textNode = document.createTextNode("Correct!");
+}
+
+function incorrect() {
+  const wrong = document.createElement("p");
+  const textNode = document.createTextNode("Incorrect!");
+}
+
+
 
 $(document).ready(function(){
     $("#q1-ans1").click(function(){
       $(".question1").hide();
+      incorrect();
     });
     $("#q1-ans1").click(function(){
         $(".question2").show();
@@ -47,6 +59,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q1-ans2").click(function(){
       $(".question1").hide();
+      correct();
     });
     $("#q1-ans2").click(function(){
         $(".question2").show();
@@ -56,6 +69,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q1-ans3").click(function(){
       $(".question1").hide();
+      incorrect();
     });
     $("#q1-ans3").click(function(){
         $(".question2").show();
@@ -65,6 +79,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q1-ans4").click(function(){
       $(".question1").hide();
+      incorrect();
     });
     $("#q1-ans4").click(function(){
         $(".question2").show();
@@ -83,6 +98,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q2-ans1").click(function(){
       $(".question2").hide();
+      incorrect();
     });
     $("#q2-ans1").click(function(){
         $(".question3").show();
@@ -92,6 +108,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q2-ans2").click(function(){
       $(".question2").hide();
+      incorrect();
     });
     $("#q2-ans2").click(function(){
         $(".question3").show();
@@ -101,6 +118,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q2-ans3").click(function(){
       $(".question2").hide();
+      incorrect();
     });
     $("#q2-ans3").click(function(){
         $(".question3").show();
@@ -110,6 +128,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q2-ans4").click(function(){
       $(".question2").hide();
+      correct();
     });
     $("#q2-ans4").click(function(){
         $(".question3").show();
@@ -127,6 +146,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q3-ans1").click(function(){
       $(".question3").hide();
+      incorrect();
     });
 
 
@@ -139,6 +159,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q3-ans2").click(function(){
       $(".question3").hide();
+      incorrect();
     });
 
 
@@ -151,6 +172,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q3-ans3").click(function(){
       $(".question3").hide();
+      correct();
     });
 
 
@@ -163,6 +185,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q3-ans4").click(function(){
       $(".question3").hide();
+      incorrect();
     });
 
 
@@ -181,6 +204,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q4-ans1").click(function(){
       $(".question4").hide();
+      incorrect();
     });
     $("#q4-ans1").click(function(){
         $(".question5").show();
@@ -191,6 +215,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q4-ans2").click(function(){
       $(".question4").hide();
+      incorrect();
     });
     $("#q4-ans2").click(function(){
         $(".question5").show();
@@ -200,6 +225,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q4-ans3").click(function(){
       $(".question4").hide();
+      incorrect();
     });
     $("#q4-ans3").click(function(){
         $(".question5").show();
@@ -209,9 +235,58 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#q4-ans4").click(function(){
       $(".question4").hide();
+      correct();
     });
     $("#q4-ans4").click(function(){
         $(".question5").show();
+
+});
+});
+
+
+
+
+
+
+
+$(document).ready(function(){
+  $("#q5-ans1").click(function(){
+    $(".question5").hide();
+    incorrect();
+  });
+  $("#q5-ans1").click(function(){
+     location.assign(results.html);
+
+});
+});
+
+$(document).ready(function(){
+  $("#q5-ans2").click(function(){
+    $(".question5").hide();
+    incorrect();
+  });
+  $("#q5-ans2").click(function(){
+    location.assign(results.html);
+
+});
+});
+$(document).ready(function(){
+  $("#q5-ans3").click(function(){
+    $(".question5").hide();
+    incorrect();
+  });
+  $("#q5-ans3").click(function(){
+    location.assign(results.html);
+
+});
+});
+$(document).ready(function(){
+  $("#q5-ans4").click(function(){
+    $(".question5").hide();
+    correct();
+  });
+  $("#q5-ans4").click(function(){
+    location.assign(results.html);
 
 });
 });
