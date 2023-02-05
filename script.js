@@ -255,7 +255,7 @@ $(document).ready(function(){
     incorrect();
   });
   $("#q5-ans1").click(function(){
-     location.assign(results.html);
+    window.location.href = 'results.html';
 
 });
 });
@@ -266,7 +266,8 @@ $(document).ready(function(){
     incorrect();
   });
   $("#q5-ans2").click(function(){
-    location.assign(results.html);
+    window.location.href = 'results.html';
+    
 
 });
 });
@@ -276,7 +277,8 @@ $(document).ready(function(){
     incorrect();
   });
   $("#q5-ans3").click(function(){
-    location.assign(results.html);
+    window.location.href = 'results.html';
+    
 
 });
 });
@@ -286,7 +288,8 @@ $(document).ready(function(){
     correct();
   });
   $("#q5-ans4").click(function(){
-    location.assign(results.html);
+    window.location.href = 'results.html';
+   
 
 });
 });
