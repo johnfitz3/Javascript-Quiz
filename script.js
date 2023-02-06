@@ -3,6 +3,7 @@ $(".question2").hide();
 $(".question3").hide();
 $(".question4").hide();
 $(".question5").hide();
+var score 
 
 var timer2 = "01:00";
 var interval = setInterval(function() {
@@ -34,23 +35,12 @@ $(document).ready(function(){
 });
 
 
-function correct() {
-  const right = document.createElement("p");
-  const textNode = document.createTextNode("Correct!");
-}
-
-function incorrect() {
-  const wrong = document.createElement("p");
-  const textNode = document.createTextNode("Incorrect!");
-}
-
 
 
 $(document).ready(function(){
     $("#q1-ans1").click(function(){
       $(".question1").hide();
       incorrect();
-      localStorage.setItem('q1-a1', 'incorrect');
       
     });
     $("#q1-ans1").click(function(){
@@ -253,47 +243,3 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-  $("#q5-ans1").click(function(){
-    $(".question5").hide();
-    incorrect();
-  });
-  $("#q5-ans1").click(function(){
-    window.location.href = 'results.html';
-
-});
-});
-
-$(document).ready(function(){
-  $("#q5-ans2").click(function(){
-    $(".question5").hide();
-    incorrect();
-  });
-  $("#q5-ans2").click(function(){
-    window.location.href = 'results.html';
-    
-
-});
-});
-$(document).ready(function(){
-  $("#q5-ans3").click(function(){
-    $(".question5").hide();
-    incorrect();
-  });
-  $("#q5-ans3").click(function(){
-    window.location.href = 'results.html';
-    
-
-});
-});
-$(document).ready(function(){
-  $("#q5-ans4").click(function(){
-    $(".question5").hide();
-    correct();
-  });
-  $("#q5-ans4").click(function(){
-    window.location.href = 'results.html';
-   
-
-});
-});
