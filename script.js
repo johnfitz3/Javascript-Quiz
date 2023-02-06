@@ -50,9 +50,13 @@ $(document).ready(function(){
     $("#q1-ans1").click(function(){
       $(".question1").hide();
       incorrect();
+      localStorage.setItem('q1-a1', 'incorrect');
+      
     });
     $("#q1-ans1").click(function(){
         $(".question2").show();
+        
+        
 
 });
 });
